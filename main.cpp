@@ -22,6 +22,7 @@ public:
     {
         return this->cost;
     }
+    ~Hrana(){}
 
 
 };
@@ -119,7 +120,7 @@ public:
         ///out<<endl;
         return out;
     }
-    virtual ~Vietuitoare();
+    virtual ~Vietuitoare(){}
 
 };
 
@@ -168,7 +169,7 @@ public:
             out<<"Animalul nu are nevoie de cusca."<<endl;
         return out;
     }
-    virtual ~VietuitoareTerestre();
+    virtual ~VietuitoareTerestre(){}
 };
 
 class VietuitoareAcvatice:virtual public Vietuitoare
@@ -218,7 +219,7 @@ public:
             out<<"Animalul nu are solzi."<<endl;
         return out;
     }
-    virtual ~VietuitoareAcvatice();
+    virtual ~VietuitoareAcvatice(){}
 };
 
 class Amfibieni: public VietuitoareTerestre,public VietuitoareAcvatice
@@ -263,7 +264,7 @@ public:
             out<<"Animalul nu are solzi."<<endl;
         return out;
     }
-    virtual ~Amfibieni();
+     ~Amfibieni(){}
 
 };
 
